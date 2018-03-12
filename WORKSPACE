@@ -30,8 +30,8 @@ load("@drake//tools/workspace:github.bzl", "github_archive")
 
 github_archive(
     name = "libezgripper",
-    repository = "SAKErobotics/libezgripper",
-    commit = "ce8539269a4cc12a805e163eb023505dd339ab00",
-    sha256 = "d4b2eeec6fc3344fc1aa9cdccfb157c1e9adc560219cd7958699a8f3b7a44ad9",  # noqa
+    repository = "sammy-tri/libezgripper",
+    commit = "a2afce144e8b1fe7e82b35bf8a25172429df1783",
+    sha256 = "78795ad1ac2428cff176a714a20e4a94a922535f0820ea5f20601b47293c2651",  # noqa
     build_file = "//tools/libezgripper:package.BUILD.bazel",
 )
