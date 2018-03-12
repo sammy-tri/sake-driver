@@ -1,0 +1,17 @@
+# -*- python -*-
+# This file contains rules for Bazel; see drake/doc/bazel.rst.
+
+package(default_visibility = ["//visibility:public"])
+
+py_binary(
+    name = "sake_driver",
+    srcs = [
+        "sake_gripper.py",
+    ],
+    main = "sake_gripper.py",
+    deps = [
+        "@drake//lcmtypes:lcmtypes_py",
+        "@lcm//:lcm-python",
+        "@libezgripper",
+    ]
+)

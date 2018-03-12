@@ -1,0 +1,9 @@
+# -*- mode: python -*-
+# vi: set ft=python :
+
+package(default_visibility = ["//visibility:public"])
+
+py_library(
+    name = "libezgripper",
+    srcs = glob(["libezgripper/*.py"])
+)
